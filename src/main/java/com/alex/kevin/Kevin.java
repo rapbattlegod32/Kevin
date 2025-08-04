@@ -14,7 +14,7 @@ public class Kevin {
     public Kevin(){
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(config.getToken());
         builder.setStatus(OnlineStatus.ONLINE);
-        builder.setActivity(Activity.listening("Gooning"));
+        builder.setActivity(Activity.listening("something"));
         shardManager = builder.build();
     }
 
