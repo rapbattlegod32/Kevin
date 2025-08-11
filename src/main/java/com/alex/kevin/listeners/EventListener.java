@@ -25,7 +25,7 @@ public class EventListener extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         String content = event.getMessage().getContentRaw().toLowerCase();
-        String prefix = config.getPrefix();
+        char prefix = config.getPrefix();
 
         if (content.equals(prefix + "ping")){
             String message = "Pong!";

@@ -9,14 +9,15 @@ public class Secrets {
             .load();
 
     private final String token = dotenv.get("DISCORD_TOKEN");
-    private final String prefix = dotenv.get("PREFIX");
+    private final char prefix = dotenv.get("PREFIX").charAt(0);
 
     public String getToken() {
         return this.token;
     }
 
-    public String getPrefix() {
+    public char getPrefix() {
         return this.prefix;
     }
+
 
 }
