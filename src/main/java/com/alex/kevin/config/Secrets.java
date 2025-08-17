@@ -10,6 +10,8 @@ public class Secrets {
 
     private final String token = dotenv.get("DISCORD_TOKEN");
     private final char prefix = dotenv.get("PREFIX").charAt(0);
+    private final String inviteGuild = dotenv.get("INVITE_GUILD");
+    private final String inviteUser = dotenv.get("INVITE_USER");
 
     public String getToken() {
         return this.token;
@@ -18,6 +20,9 @@ public class Secrets {
     public char getPrefix() {
         return this.prefix;
     }
+
+    public String getInviteGuild() { return this.inviteGuild; }
+    public String getInviteUser() { return this.inviteUser; }
 
 
 }
